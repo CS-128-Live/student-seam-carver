@@ -38,9 +38,10 @@ vector<vector<int>> CalculateCostVertical(const vector<vector<int>>& energy);
 // MODIFIES:
 // EFFECTS: Returns the lowest energy vertical seam in the image. The returned
 //          vector's size is image_ height. Each element in the vector is
-//          between [0, image_ width). See spec for algorithm.
-//          hint: You will need to call CalculateEnergy, and
-//          CalculateCostVertical
+//          between [0, image_ width). The value at the 0th index indicates the
+//          column value of the seam at row 0 and so forth. See spec for
+//          algorithm. hint: You will need to call CalculateEnergy, and
+//          CalculateCostVertical.
 // MP PART: 2
 vector<int> FindVerticalSeam(const Image& image_);
 
