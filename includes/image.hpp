@@ -18,28 +18,28 @@ public:
   // MP PART: 1
   Image(int height, int width);
 
-  // REQUIRES: filename leads to a valid ppm P3 file.
+  // REQUIRES: filename leads to a valid PPM P3 file.
   // MODIFIES: Image
-  // EFFECTS: Initializes an image from a ppm file at filename.
+  // EFFECTS: Initializes an image from a PPM file at filename.
   //          Handle the file not opening anyway you would like.
   // MP PART: 1
   Image(const std::string& filename);
 
   // REQUIRES:
   // MODIFIES:
-  // EFFECTS: Writes the image to a ppm file named filename.
+  // EFFECTS: Writes the image to a PPM file named filename.
   // MP PART: 1
   void SaveToFile(const std::string& filename);
 
   // REQUIRES: data_ has at least 1 row.
   // MODIFIES:
-  // EFFECTS: Returns the width of the 1st row of the image.
+  // EFFECTS: Returns the width of the 1st row of the image as an int.
   // MP PART: 1
   int Width() const;
 
   // REQUIRES:
   // MODIFIES:
-  // EFFECTS: Returns the image height.
+  // EFFECTS: Returns the image height as an int.
   // MP PART: 1
   int Height() const;
 
