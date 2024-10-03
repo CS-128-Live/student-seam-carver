@@ -5,7 +5,7 @@
 // REQUIRES: p1 and p2 are valid pixels
 // MODIFIES:
 // EFFECTS: Returns the energy between two pixels
-int CalculatePixelEnergy(const Pixel& p1, const Pixel& p2) {
+int SquaredPixelEnergy(const Pixel& p1, const Pixel& p2) {
   double dr = p2.r - p1.r;
   double dg = p2.g - p1.g;
   double db = p2.b - p1.b;
