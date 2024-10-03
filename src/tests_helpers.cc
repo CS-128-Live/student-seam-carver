@@ -35,3 +35,15 @@ bool CompareImages(const Image& img1, const Image& img2) {
   }
   return true;
 }
+
+bool CompareIntVectors(const vector<vector<int>>& b,
+                       const vector<vector<int>>& a) {
+  for (int row = 0; row < static_cast<int>(a.size()); row++) {
+    for (int col = 0; col < static_cast<int>(a[row].size()); col++) {
+      if (b.size() != a.size()) return false;
+      if (b[row].size() != a[row].size()) return false;
+      if (b[row][col] != a[row][col]) return false;
+    }
+  }
+  return true;
+}
