@@ -28,6 +28,9 @@ public:
   // REQUIRES:
   // MODIFIES:
   // EFFECTS: Writes the image to a PPM file named filename.
+  //          The three header items in the PPM file are not followed by a space, just a 
+  //          newline. Each pixel is printed in the format of "<red> <green> <blue> ". 
+  //          This includes the last pixel in the row. Each row is followed by a newline. 
   // MP PART: 1
   void SaveToFile(const std::string& filename);
 
