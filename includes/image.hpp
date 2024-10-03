@@ -21,7 +21,8 @@ public:
   // REQUIRES: filename leads to a valid PPM P3 file.
   // MODIFIES: Image
   // EFFECTS: Initializes an image from a PPM file at filename.
-  //          If the file cannot be opened, throw a runtime_error exception.
+  //          If the file cannot be opened, throw a runtime_error exception with
+  //          the message "File could not be opened."
   // MP PART: 1
   Image(const std::string& filename);
 
