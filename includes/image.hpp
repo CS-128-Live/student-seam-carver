@@ -21,7 +21,7 @@ public:
   // REQUIRES: filename leads to a valid PPM P3 file.
   // MODIFIES: Image
   // EFFECTS: Initializes an image from a PPM file at filename.
-  //          Handle the file not opening anyway you would like.
+  //          If the file cannot be opened, throw a runtime_error exception.
   // MP PART: 1
   Image(const std::string& filename);
 
@@ -37,6 +37,7 @@ public:
   // REQUIRES: data_ has at least 1 row.
   // MODIFIES:
   // EFFECTS: Returns the width of the 1st row of the image as an int.
+  //          Use assert to check the REQUIRES.
   // MP PART: 1
   int Width() const;
 
@@ -49,6 +50,7 @@ public:
   // REQUIRES: row is between [0, height), and col is between [0, width).
   // MODIFIES:
   // EFFECTS: Returns the pixel at row, col.
+  //          Use assert to check the REQUIRES.
   // MP PART: 1
   Pixel GetPixel(int row, int col) const;
 
@@ -56,6 +58,7 @@ public:
   //           new_pixel is a valid pixel.
   // MODIFIES: Image
   // EFFECTS: Sets the pixel at row, col to new_pixel.
+  //          Use assert to check the REQUIRES.
   // MP PART: 1
   void SetPixel(int row, int col, Pixel new_pixel);
 
@@ -63,7 +66,7 @@ public:
   //            at least 2 pixels in row's corresponding row.
   // MODIFIES: Image
   // EFFECTS: Removes the pixel at row, col. Changing that row to have one less
-  //          pixel.
+  //          pixel. Use assert to check the requires.
   //          hint: Feel free to use any vector member functions
   // MP PART: 1
   void RemovePixel(int row, int col);
