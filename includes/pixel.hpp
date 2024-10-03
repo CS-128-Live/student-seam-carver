@@ -1,7 +1,7 @@
 #ifndef PIXEL_HPP
 #define PIXEL_HPP
 
-// Invariant: a Pixel has values between [0, 225].
+// Invariant: a Pixel has values between [0, 255].
 struct Pixel {
   int r = 0;
   int g = 0;
