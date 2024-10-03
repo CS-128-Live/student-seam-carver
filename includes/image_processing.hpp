@@ -30,7 +30,7 @@ vector<vector<int>> CalculateEnergy(const Image& image_);
 
 // REQUIRES: energy is a rectangle.
 // MODIFIES:
-// EFFECTS: Returns the vertical cost matrix for energy. See spec for algorithm.
+// EFFECTS: Returns the vertical cost matrix for energy. See spec for the algorithm.
 // MP PART: 2
 vector<vector<int>> CalculateCostVertical(const vector<vector<int>>& energy);
 
@@ -39,7 +39,7 @@ vector<vector<int>> CalculateCostVertical(const vector<vector<int>>& energy);
 // EFFECTS: Returns the lowest energy vertical seam in the image. The returned
 //          vector's size is image_ height. Each element in the vector is
 //          between [0, image_ width). The value at the 0th index indicates the
-//          column value of the seam at row 0 and so forth. See spec for
+//          column value of the seam at row 0 and so forth. See spec for the
 //          algorithm. hint: You will need to call CalculateEnergy, and
 //          CalculateCostVertical.
 // MP PART: 2
