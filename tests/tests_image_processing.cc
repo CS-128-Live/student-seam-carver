@@ -32,4 +32,7 @@ TEST_CASE("ImageProcessing Flip Left", "[ImageProcessing-FlipLeft]") {
   REQUIRE(CompareImages(img1_rotate_left, img_proc1));
 }
 
-// Add more tests below
+// Add more tests below!
+// Look inside the tests/test_images folder for sample small images.
+// Feel free to also make your own!
+// Use the helper functions in test_helpers.hpp and test_helpers.cc to compare images.
