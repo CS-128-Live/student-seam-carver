@@ -36,7 +36,7 @@ TEST_CASE("Empty Image constructor", "[Image-constructor]") {
 
 // Look inside the tests/test_images folder for sample small images.
 // Feel free to also make your own!
-// Use the helper functions in test_helpers.hpp and test_helpers.cc to compare images.
+// Use the helper functions in tests_helpers.hpp and tests_helpers.cc to compare images.
 TEST_CASE("Image constructor with images", "[Image-constructor]") {}
 
 TEST_CASE("Image Set Pixel and Get Pixel", "[Image-SetPixel][Image-GetPixel]") {

@@ -35,4 +35,4 @@ TEST_CASE("ImageProcessing Flip Left", "[ImageProcessing-FlipLeft]") {
 // Add more tests below!
 // Look inside the tests/test_images folder for sample small images.
 // Feel free to also make your own!
-// Use the helper functions in test_helpers.hpp and test_helpers.cc to compare images.
+// Use the helper functions in tests_helpers.hpp and tests_helpers.cc to compare images.
