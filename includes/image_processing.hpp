@@ -10,6 +10,18 @@ constexpr int kHighEnergy = 9999;
 // REQUIRES:
 // MODIFIES: image_
 // EFFECTS: Rotates the image 90 degrees counterclockwise.
+/*
+image_ 
+A B C D
+E F G H
+I J K L
+
+would become
+D H L
+C G K
+B F J 
+A E I
+*/
 // MP PART: 1
 void RotateLeft(Image& image_);
 
@@ -17,6 +29,18 @@ void RotateLeft(Image& image_);
 // MODIFIES: image_
 // EFFECTS: Rotates the image 90 degrees clockwise.
 //          hint: You can use other image_processing functions
+/*
+image_ 
+D H L
+C G K
+B F J
+A E I
+
+would become
+A B C D
+E F G H
+I J K L
+*/
 // MP PART: 1
 void RotateRight(Image& image_);
 
